@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Marking</title>
+</head>
+<body>
+    <h1>Mark Your Attendance</h1>
+    <form method="POST" action="/mark_attendance">
+        <label for="date">Date:</label>
+        <input type="text" name="date" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+        <input type="submit" value="Mark Attendance">
+    </form>
+    <a href="/view_attendance">View Attendance</a>
+</body>
+</html>

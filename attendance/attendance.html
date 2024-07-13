@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance</title>
+</head>
+<body>
+    <h1>Attendance Data</h1>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Names</th>
+        </tr>
+        {% for date, names in attendance_data.items() %}
+        <tr>
+            <td>{{ date }}</td>
+            <td>{{ ', '.join(names) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Mark Attendance</a>
+</body>
+</html>
